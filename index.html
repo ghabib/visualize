@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Home Page</title>
+	<meta name="description" content="A modular template">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap-custom.css" rel="stylesheet" />
+	<link href="css/animate.min.css" rel="stylesheet" />
+	<link href="css/ionicons.css?v=2.0.1" media="none" onload="this.media=&amp;apos;all&amp;apos;" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E=" crossorigin="anonymous" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/css/select2.min.css" rel="stylesheet" />
+	
+</head>
+
+<body>
+	<!-- <div id="top"> -->
+		<!-- <div class="header-content container py-5"> -->
+			<!-- <div class="row">
+				<div class="col-xl-4 col-lg-4 col-md-5 py-3">
+					<h1 class="display-2 pt-3 mb-5"><a class="link" href=""> <span class="text-typing line-1 wow fadeIn"
+								data-wow-delay="1.2s">Data,</span> <span class="text-typing line-2 wow fadeIn"
+								data-wow-delay="1.4s">Visuals</span> <span class="text-typing line-3 wow fadeIn"
+								data-wow-delay="1.6s">and Something.</span> </a></h1>
+				</div>
+
+				<div class="col-xl-4 col-lg-4 col-md-5 ml-auto py-3">
+					<blockquote class="blockquote">
+						<h3 class="text-right pt-3">Wow, yeaahh man.<br />
+							You <em>are</em> really<br />
+							a hipster nerd</h3>
+						&nbsp;
+
+						<h6 class="text-right"><a class="text-muted link small" href="">We made it easy</a></h6>
+					</blockquote>
+				</div>
+			</div> -->
+		<!-- </div> -->
+	</div>
+	<!-- navbar -->
+
+	<nav class="navbar navbar-default mb-3 navbar-expand-md fixed-top" data-toggle="affix" id="topNav"><button
+			class="navbar-toggler collapsed navbar-toggler-right border-0" data-target="#collapsingNavbar"
+			data-toggle="collapse" type="button"></button>
+
+		<div class="d-flex">
+			<!-- this toggler only displays on offcanvas layout -->
+			<!-- text brand or logo image goes here --><a
+				class="navbar-brand page-scroll text-uppercase wide-space link" href="./">Visualize </a></div>
+
+		<!-- <div class="collapse navbar-collapse border-0" id="collapsingNavbar">
+			<ul class="nav navbar-nav">
+				<li class="nav-item"><a class="nav-link page-scroll link" data-target="#one" href="./#one">Link</a></li>
+				<li class="nav-item"><a class="nav-link page-scroll link" data-target="#blog"
+						href="./blank.html">Link</a></li>
+			</ul>
+		</div> -->
+	</nav>
+	<!-- /navbar -->
+
+	<section id="one">
+		<div class="container">
+			<div class="row">
+				<!-- <div class="col-6">
+					<h2 class="d-inline-block mb-2 text-highlight">Deal Cards.</h2>
+
+					<p class="lead py-2">Want to make content areas more noticeable? Cards are one of the more well
+						known trends in responsive design. Cards can be singular, grouped together or equal height. <a
+							class="link" href="./">There are many different layout and content options.</a></p>
+				</div>
+
+				<div class="col-6 align-self-center text-muted">
+					<p>Cards are a good way to display content composed of different types of objects. They&rsquo;re
+						well-suited for presenting similar objects whose size or supported actions vary, like headings
+						and photos with captions.</p>
+
+					<p>Use card groups to render equal height cards without gutters between the cards. Use .card-deck
+						for cards that aren&rsquo;t attached to each another, and thanks to flexbox we now have equal
+						height cards! Clear, concise and bold.</p>
+				</div> -->
+
+				<div class="col-12">
+					<div class="card-group mt-2 wow fadeIn">
+						<!-- card -->
+						<!-- <div class="card card-default text-center border-left-0">
+							<div class="card-body pl-0">
+								<h1><em>54.2k</em></h1>
+
+								<h6 class="d-inline">views</h6>
+							</div>
+						</div> -->
+						<!-- card -->
+
+						<!-- <div class="card card-default text-center">
+							<div class="card-body pl-0">
+								<h1><em>100%</em></h1>
+
+								<h6 class="d-inline">coverage</h6>
+							</div>
+						</div> -->
+						<!-- card -->
+
+						<div class="card card-default text-center border-right-0">
+							<div class="card-body pl-0">
+								<!-- <h1><em>24</em></h1> -->
+								<button class="btn btn-primary" id="addCountry">Cick Me</button>
+								<br/>
+								<h6 style="padding-top: 12px;">to add countries in decending order</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row" style="padding-top: 20px;">
+				<div class="col-12">
+					<h2>Line Chart</h2>
+					<canvas id="myChart" width="400" height="400"></canvas>
+				
+				</div>
+			</div>
+			<div class="row" style="padding-top: 20px; border-top: 2px solid;">
+				<!-- <div class="col-12">
+					<h2>Lets turn some data easy to understand</h2>
+				</div> -->
+				<!-- <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+					<option value="AL">Alabama</option>
+					<option value="WY">Wyoming</option>
+				</select> -->
+				
+				<div class="col-12">
+					<h2>Radar Chart</h2>
+					<canvas id="radarChart" width="400" height="400"></canvas>
+				
+				</div>
+				<!-- <div class="col-12"> -->
+					
+				<!-- </div> -->
+				
+				<!-- Editable table -->
+				<div class="card">
+					<h3 class="card-header text-center font-weight-bold text-uppercase py-4">Editable table</h3>
+					<div class="card-body">
+						<div id="table" class="table-editable">
+							<span class="table-add float-right mb-3 mr-2">
+								<a href="#!" class="text-success">
+									<i class="fas fa-plus fa-2x" aria-hidden="true"></i>
+								</a>
+							</span>
+							<table class="table table-bordered table-responsive-md table-striped text-center">
+								<thead>
+									<tr>
+										<th class="text-center">Person Name</th>
+										<th class="text-center">Age</th>
+										<th class="text-center">Company Name</th>
+										<th class="text-center">Country</th>
+										<th class="text-center">City</th>
+										<th class="text-center">Sort</th>
+										<th class="text-center">Remove</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="pt-3-half" contenteditable="true">Aurelia Vega</td>
+										<td class="pt-3-half" contenteditable="true">30</td>
+										<td class="pt-3-half" contenteditable="true">Deepends</td>
+										<td class="pt-3-half" contenteditable="true">Spain</td>
+										<td class="pt-3-half" contenteditable="true">Madrid</td>
+										<td class="pt-3-half">
+											<span class="table-up"><a href="#!" class="indigo-text"><i
+														class="fas fa-long-arrow-alt-up"
+														aria-hidden="true"></i></a></span>
+											<span class="table-down"><a href="#!" class="indigo-text"><i
+														class="fas fa-long-arrow-alt-down"
+														aria-hidden="true"></i></a></span>
+										</td>
+										<td>
+											<span class="table-remove"><button type="button"
+													class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+										</td>
+									</tr>
+									<!-- This is our clonable table line -->
+									<tr>
+										<td class="pt-3-half" contenteditable="true">Guerra Cortez</td>
+										<td class="pt-3-half" contenteditable="true">45</td>
+										<td class="pt-3-half" contenteditable="true">Insectus</td>
+										<td class="pt-3-half" contenteditable="true">USA</td>
+										<td class="pt-3-half" contenteditable="true">San Francisco</td>
+										<td class="pt-3-half">
+											<span class="table-up"><a href="#!" class="indigo-text"><i
+														class="fas fa-long-arrow-alt-up"
+														aria-hidden="true"></i></a></span>
+											<span class="table-down"><a href="#!" class="indigo-text"><i
+														class="fas fa-long-arrow-alt-down"
+														aria-hidden="true"></i></a></span>
+										</td>
+										<td>
+											<span class="table-remove"><button type="button"
+													class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+										</td>
+									</tr>
+									<!-- This is our clonable table line -->
+									<tr>
+										<td class="pt-3-half" contenteditable="true">Guadalupe House</td>
+										<td class="pt-3-half" contenteditable="true">26</td>
+										<td class="pt-3-half" contenteditable="true">Isotronic</td>
+										<td class="pt-3-half" contenteditable="true">Germany</td>
+										<td class="pt-3-half" contenteditable="true">Frankfurt am Main</td>
+										<td class="pt-3-half">
+											<span class="table-up"><a href="#!" class="indigo-text"><i
+														class="fas fa-long-arrow-alt-up"
+														aria-hidden="true"></i></a></span>
+											<span class="table-down"><a href="#!" class="indigo-text"><i
+														class="fas fa-long-arrow-alt-down"
+														aria-hidden="true"></i></a></span>
+										</td>
+										<td>
+											<span class="table-remove"><button type="button"
+													class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+										</td>
+									</tr>
+									<!-- This is our clonable table line -->
+									<tr class="hide">
+										<td class="pt-3-half" contenteditable="true">Elisa Gallagher</td>
+										<td class="pt-3-half" contenteditable="true">31</td>
+										<td class="pt-3-half" contenteditable="true">Portica</td>
+										<td class="pt-3-half" contenteditable="true">United Kingdom</td>
+										<td class="pt-3-half" contenteditable="true">London</td>
+										<td class="pt-3-half">
+											<span class="table-up"><a href="#!" class="indigo-text"><i
+														class="fas fa-long-arrow-alt-up"
+														aria-hidden="true"></i></a></span>
+											<span class="table-down"><a href="#!" class="indigo-text"><i
+														class="fas fa-long-arrow-alt-down"
+														aria-hidden="true"></i></a></span>
+										</td>
+										<td>
+											<span class="table-remove"><button type="button"
+													class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- Editable table -->
+			</div>
+		</div>
+	</section>
+
+	<footer class="pt-5" id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<p class="display-2 mb-2">Footer.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-6 col-md-3">
+					<h6 class="text-uppercase">More</h6>
+
+					<ul class="list-unstyled">
+						<li><a href="./">Link</a></li>
+						<li><a href="./">Link</a></li>
+						<li><a href="./">Link</a></li>
+					</ul>
+				</div>
+
+				<div class="col-6 col-md-3 column">
+					<h6 class="text-uppercase">More</h6>
+
+					<ul class="list-unstyled">
+						<li><a href="./">Link</a></li>
+						<li><a href="./">Link</a></li>
+						<li><a href="./">Link</a></li>
+					</ul>
+				</div>
+
+				<div class="col-12 col-md-3 column"></div>
+
+				<div class="col-12 col-lg-2 offset-lg-1 col-md-3 offset-md-0 text-right">
+					<h6 class="text-uppercase">More</h6>
+
+					<p><em><a href="">Link to another page.</a></em></p>
+				</div>
+
+				<div class="col-12 text-md-right text-center">&nbsp;
+					<ul class="list-inline">
+						<li class="list-inline-item"></li>
+						<li class="list-inline-item"></li>
+						<li class="list-inline-item"></li>
+						<li class="list-inline-item"></li>
+					</ul>
+				</div>
+			</div>
+			&nbsp;
+
+			<hr class="light" />
+			<div class="text-center text-normal"><a href="">Company, Inc. </a></div>
+		</div>
+	</footer>
+	<!--scripts loaded here-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script> 
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/js/select2.full.min.js"></script>
+	<script src="js/data.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+
+</html>
